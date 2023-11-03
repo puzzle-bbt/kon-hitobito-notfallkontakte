@@ -59,3 +59,9 @@ Der Notfallkontakt ist eine neue Tabelle in der Datenbank, da erwartet wird das 
 Für die Felder im Formular kann ein [labeled_inline_fields_for](https://github.com/hitobito/hitobito/blob/master/app/helpers/standard_form_builder.rb#L251) genutzt werden, die ganzen Views zu den Feldern selbst kommen in einen Unterornder mit dem Namen "emergency_contacts" in den Ordner [Person](https://github.com/hitobito/hitobito/tree/master/app/views/person)
 
 Der Endpoint fürs Bearbeiten von Personendaten, bleibt der selbe. Den Export kann man hier hinzufügen https://github.com/hitobito/hitobito/tree/master/app/domain/export
+
+Auf dem neu erstellten Model sollen die Attribute noch wie folgt validiert werden:
+Name: keine Validierung benötigt
+Email: email regex
+Telefonnummer: telefonnummer regex
+Beziehung: keine Validierung
